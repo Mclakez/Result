@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: 'extra';
+  src: url('fonts/static/HankenGrotesk-ExtraBold.ttf');
+}
+
+@font-face  {
+				font-family: 'regular';
+				src: url('fonts/static/HankenGrotesk-Medium.ttf');
+}
+
+@font-face  {
+				font-family: 'bold';
+				src: url('fonts/static/HankenGrotesk-Bold.ttf');
+}
+
+@font-face  {
+				font-family: 'vary';
+				src: url('fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+
+body {
+				min-height: 100vh;
+				background: lightblue;
+}
+
+.container {
+				width: 50%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				display: flex;
+				background: white;
+				border-radius: 15px 15px 15px 15px;
+}
+
+.left {
+				text-align: center;
+				background: linear-gradient(180deg,hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+				border-radius: 15px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				width: 50%;
+}
+
+.result {
+				color: white;
+				font-family: 'regular';
+				margin-top: 25px;
+				margin-bottom: 25px;
+}
+
+.circle {
+				width: 160px;
+				height: 160px;
+				border-radius: 50%;
+				background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				margin-bottom: 25px;
+}
+
+.big {
+				font-family: 'extra';
+				color: white;
+				font-size: 70px;
+}
+
+.small {
+				color: hsl(0,0%,80%);
+				font-family: 'regular';
+}
+
+.great {
+				color: white;
+				font-family: 'bold';
+				font-size: 25px;
+}
+
+.conclude {
+				color: hsl(0,0%,80%);
+				font-family: 'regular';
+				font-size: 14px;
+				margin-top: 25px;
+				margin-bottom: 50px;
+				padding-left: 50px;
+				padding-right: 50px;
+}
+
+.right {
+				width: 50%;
+				background: white;
+				padding: 25px 20px 5px 25px;
+				border-radius: 0 15px 15px 0;
+}
+
+h3 {
+				color: hsl(224, 30%, 27%);
+				margin-bottom: 20px;
+}
+
+.bars {
+				width: 100%;
+				text-align: center;
+}
+
+.line {
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 16px;
+}
+
+.west {
+				display: flex;
+				align-items: center;
+}
+
+/* the numbers of the bars */
+.bold {
+				font-family: 'bold';
+				color: hsl(224, 30%, 27%);
+				padding-right: 10px;
+}
+
+.light {
+				color: gray;
+}
+
+/* color of bar background */
+.reaction {
+				background: hsla(0, 100%, 67%,10%);
+				padding: 15px 12px ;
+				border-radius: 8px;
+}
+
+.memory {
+				background: hsla(39, 100%, 56%,10%);
+				padding: 15px 12px ;
+				border-radius: 8px;
+}
+
+.verbal {
+				background: hsla(166, 100%, 37%,10%);
+				padding: 15px 12px ;
+				border-radius: 8px;
+}
+
+.visual {
+				background: hsla(234, 85%, 45%,10%);
+				padding: 15px 12px ;
+				border-radius: 8px;
+}
+
+/* the words in front of the icons */
+.react {
+				color: hsl(0, 100%, 67%);
+				font-family: 'regular';
+				margin-left: 10px;
+}
+
+.mem {
+				color: hsl(39, 100%, 56%);
+				font-family: 'regular';
+				margin-left: 10px;
+}
+
+.verb {
+				color: hsl(166, 100%, 37%);
+				font-family: 'regular';
+				margin-left: 10px;
+}
+
+.vis {
+				color: hsl(234, 85%, 45%);
+				font-family: 'regular';
+				margin-left: 10px;
+}
+
+button {
+				width: 100%;
+				padding-top: 13px;
+				padding-bottom: 13px;
+				background: hsl(224, 30%, 27%);
+				color: white;
+				border: none;
+				border-radius: 30px 30px 30px 30px;
+				font-size: 16px;
+				font-family: 'regular';
+}
+
+button:active{
+				background: linear-gradient(180deg,hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+
+@media(max-width: 768px){
+				.container {
+								width: 70%;
+				}
+}
+
+@media(max-width: 435px){
+				.container {
+								flex-direction: column;
+								width: 100%;
+								border-radius: 20px;
+								margin-top: 40px;
+				}
+				
+				.right {
+								width: 100%;
+								border-radius: 0 0 20px 20px;
+				}
+				
+			 .left {
+			 				width: 100%;
+			 				border-radius: 20px;
+			 }
+			 
+			 .conclude {
+			 				font-size: 18px;
+			 }
+			 
+			 button {
+			 				margin-bottom: 25px;
+			 				font-size: 20px;
+			 }
+                                    }
